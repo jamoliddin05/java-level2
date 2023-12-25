@@ -2,12 +2,14 @@ package com.dmdev.oop.lesson15.heroes;
 
 import com.dmdev.oop.lesson15.enemies.Enemy;
 import com.dmdev.oop.lesson15.interfaces.Mortal;
+import com.dmdev.oop.lesson18.weapon.Weapon;
 
-public abstract class Hero implements Mortal {
+public abstract class Hero<T extends Weapon> implements Mortal {
 
     private String name;
     private int damage;
     private int health;
+    private T weapon;
 
     public Hero(String name, int damage, int health) {
         this.name = name;
@@ -42,5 +44,13 @@ public abstract class Hero implements Mortal {
 
     public int getHealth() {
         return health;
+    }
+
+    public T getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(T weapon) {
+        this.weapon = weapon;
     }
 }
