@@ -10,7 +10,9 @@ public class Point {
     }
 
     public double distance(Point target) {
-        return Math.sqrt(Math.pow(target.getX() - x, 2) + Math.pow(target.getY() - y, 2));
+        return Math.sqrt(
+                Math.pow(target.getX() - x, 2) + Math.pow(target.getY() - y, 2)
+        );
     }
 
     public double getX() {

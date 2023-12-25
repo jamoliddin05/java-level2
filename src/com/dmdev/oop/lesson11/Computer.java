@@ -5,8 +5,13 @@ public class Computer {
     private Ssd ssd;
 
     public Computer(Ram ram, Ssd ssd) {
+        super();
         this.ram = ram;
         this.ssd = ssd;
+    }
+
+    public Computer() {
+        System.out.println("I'm computer");
     }
 
     public void load() {
