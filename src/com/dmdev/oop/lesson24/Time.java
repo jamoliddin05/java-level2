@@ -1,4 +1,4 @@
-package com.dmdev.oop.lessson24;
+package com.dmdev.oop.lesson24;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
